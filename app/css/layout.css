@@ -1,0 +1,65 @@
+:root {
+    font-size: calc(0.5em + 1vw);
+
+    --logo-height: 60px;  
+    --map-height: 320px;  
+    --month-height: 1px;
+    
+    --left-width: 170px;
+    --center-width: 220px ;
+}
+
+body {
+    font-family: "filson-pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  }
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "title           title          filters      "
+        "chart-month     chart-month    chart-month        "
+        "chart-map       chart-map      chart-list        "
+        "chart-status    chart-topic    chart-list        ";
+    grid-template-columns: var(--left-width) var(--center-width) 1fr;
+    grid-template-rows: var(--logo-height)  var(--month-height) var(--map-height)  1fr;
+    grid-gap: 10px 30px;
+    margin: 3px;
+    height: 100vh;  /* 100vh is not enough for some reason */
+    width: calc(100vw - 1.1rem);
+    overflow: hidden;
+}
+
+#title {
+    grid-area: title;
+    fill: rgb(6, 15, 240); 
+}
+
+#filters {
+    grid-area: filters;
+}
+
+#chart-month {
+    grid-area: chart-month;
+}
+
+#chart-map {
+    grid-area: chart-map;
+}
+
+#chart-topic {
+    grid-area: chart-topic;
+}
+
+#chart-status {
+    grid-area: chart-status;
+}
+
+#chart-list {
+    grid-area: chart-list;
+    overflow: auto;
+}
+
+#chart-topic, #chart-caseStatus {
+    font-weight: 500;
+}
+

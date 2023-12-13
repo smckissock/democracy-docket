@@ -1,0 +1,98 @@
+
+.dc-chart g.row text {
+    fill: #000;
+    font-size: 14px;
+    font-weight: 500; 
+}
+
+
+.case-title {
+    flex: wrap;
+    font-size: 26px;
+    font-weight: 600; 
+    color: black;
+    text-decoration: none;
+    margin-right: 10px; 
+    /* font-family: untitled-serif, serif; */
+}
+
+.case-count {
+    font-size: 22px; 
+    font-weight: 600; 
+}
+
+.state-case-count {
+    font-size: 12px; 
+    font-weight: 300; 
+}
+
+.case-filters {
+    font-size: 18px; 
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.case-title:hover {
+    text-decoration: underline;
+}
+
+.case-date {
+    flex: wrap;
+    font-size: 14px;
+    font-weight: 500; 
+
+    margin-right: 10px; 
+    margin-bottom: 20px; 
+}
+
+.case-topics-and-status {
+    color: #060ff0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.case-parties {
+    flex: wrap;
+    font-size: 17px;
+    font-weight: 500; 
+    margin-right: 10px; 
+}
+
+.case-excerpt{
+    font-size: 14px;
+    font-weight: 400; 
+    line-height: -2px;
+
+    margin-right: 10px; 
+    margin-block-start: 2px;
+    margin-block-end: 2px;
+}
+
+.case {
+    display: flex;
+    flex-direction: row;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #D3D3D3;
+}
+
+#chart-topic label {
+    display: block;
+    padding-right: 10px;
+    padding-left: 20px;
+    text-indent: -22px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.state-img {
+    padding-top: 16px;
+    padding-right: 16px;
+}
+
+.y-axis-label {
+    font-size: 14px;
+}
+
+
