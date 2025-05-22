@@ -21,6 +21,9 @@ export class Main {
     }
 
     async getData() {
+        const overlay = document.getElementById('loading-overlay');
+        overlay.classList.replace('loading-hidden','loading-visible');
+
         const [cases] = await Promise.all([
             //d3.csv("/data/cases.csv")
             d3.csv("https://smckissock.github.io/democracy-docket/app/data/cases.csv")
@@ -51,7 +54,9 @@ export class Main {
 
         this.setupCharts();
         dc.renderAll();
-        this.refresh();        
+        this.refresh(); 
+        
+        overlay.classList.replace('loading-visible','loading-hidden'); 
     }
 
     setupCharts() {
